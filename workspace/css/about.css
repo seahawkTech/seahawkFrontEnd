@@ -1,0 +1,206 @@
+/*FONTS*/
+@font-face {
+  font-family: 'CourierNewBold';
+  src: url('/fonts/CourierNewBold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'CourierNew';
+  src: url('/fonts/CourierNew.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'FuturaMedium';
+  src: url('/fonts/FuturaMedium.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/avenir.otf')  format('truetype');
+}
+
+@font-face{
+    font-family:'FontAwesome';
+    src: url(/fonts/fontawesome-webfont.ttf) format('truetype');
+}
+
+
+/*About Page for small screens*/
+@media (min-width: 768px) and (max-width: 991px) 
+{
+
+
+.blackBarContain
+{
+    margin-top: -2%;
+}
+  #navbar-collapse
+  {
+   margin-top: -1%;
+  }
+  
+  #boxContain
+  {
+    margin-top: 4%;
+  }
+  
+  .navbar-default
+  {
+      background-color: white;
+  }
+  
+
+}
+
+
+
+
+/*About Page on xsmall devices in potrait mode*/
+ @media screen and (orientation:portrait) 
+ { 
+       .navbar-header
+  {
+   background-color: black;
+   padding-top: 2%;
+   padding-bottom: 2%;
+    text-align: center;
+  }
+  
+
+  
+
+.navbar-default .navbar-brand {
+
+      transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  width: 400px; 
+  
+     font-family:  'FuturaMedium';
+    font-size: 210%;
+   
+    color: white;
+    letter-spacing: 4px;
+}
+
+#boxContain
+{
+    margin-left: 10%;
+}
+
+.topText, .textBoxes, .imageBoxes
+{
+    display: initial;
+}
+
+.imageText1,.imageText2,.imageText3
+{
+    margin-left: 1%;
+}
+
+.imageText1
+{
+    margin-top: 3%;
+    text-align: left;
+    font-size: 75%;
+    max-width: 50%;
+   
+}
+
+.imageText2
+{
+    text-align: left;
+    font-size: 100%;
+    
+}
+
+.imageText3
+{
+    text-align: left;
+    font-size: 120%;
+}
+
+.boxImg
+{
+    width: 80%;
+    height: 80%;
+}
+ }
+ 
+ 
+/*About Page on xsmall devices in landscape mode*/
+@media (max-width: 767px) and (orientation:landscape) 
+{
+    .navbar-header
+  {
+   background-color: black;
+   padding-top: 2%;
+   padding-bottom: 2%;
+    text-align: center;
+  }
+  
+
+  
+
+.navbar-default .navbar-brand {
+
+      transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  width: 400px; 
+  
+     font-family:  'FuturaMedium';
+    font-size: 210%;
+   
+    color: white;
+    letter-spacing: 4px;
+}
+
+#boxContain
+{
+    margin-left: 10%;
+}
+
+#boxContain .row:not(:last-child)
+{
+    margin-bottom: 5%;
+}
+
+.topText, .textBoxes, .imageBoxes
+{
+    display: initial;
+}
+
+.imageText1,.imageText2,.imageText3
+{
+    margin-left: 1%;
+}
+
+.imageText1
+{
+    margin-top: 3%;
+    text-align: left;
+    font-size: 75%;
+    max-width: 50%;
+   
+}
+
+.imageText2
+{
+    text-align: left;
+    font-size: 100%;
+    
+}
+
+.imageText3
+{
+    text-align: left;
+    font-size: 120%;
+}
+
+.boxImg
+{
+    width: 80%;
+    height: 80%;
+}
+}

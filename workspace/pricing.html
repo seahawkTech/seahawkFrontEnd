@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/dist/css/bootstrap.css?" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.css?" type="text/css">
+    <link rel="stylesheet" href="css/pricing.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+
+
+</head>
+
+<body>
+
+    <!--navigation-->
+    <div class="row" id="mainContentRow">
+        <div class="col-lg-1 hidden-sm hidden-xs hidden-md">
+            <div class="navbar navbar-inverse navbar-fixed-left" id="secondaryNav" onclick="login()">
+                <a class="navbar-brand" href="#" id="login">login</a>
+            </div>
+        </div>
+
+        <header role="banner" class="hidden-md hidden-lg">
+            <img class="hidden-xs" id="logo-main" src="images/newLogo.png" width="300" alt="Missing Logo">
+
+
+            <nav class="navbar navbar-default hidden-md hidden-lg smallerNav" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+         <span class = "sr-only">Toggle navigation</span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+      </button>
+                    <a class="navbar-brand text-hide" href="#">Brand Text
+        </a>
+                    <img class="hidden-sm hidden-md" id="logo-main" src="images/newLogo.png" width="300" alt="logo">
+
+                </div>
+
+
+                <div class="collapse navbar-collapse " id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#">Log In</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+
+
+        <div class="col-lg-11" id="mainContainer">
+
+            <div class="hidden-sm hidden-xs" id="topLeftContain">
+                <img src="images/newLogo.png" class="img-responsive">
+            </div>
+
+            <div class="blackBarContain" id="priceBar">
+
+                <div class="blackBar">
+                    <h1 class="blackBarText">PRICING</h1>
+                </div>
+            </div>
+
+            <div id="pricingContain">
+                <div class="row">
+                    <div class="col" id="pricingText">
+                        <p>
+                            Seahawk offers four pricing options to cater to the specfic needs of your business. Seahawk operates using API processing, which tracks the number of times that Seahawk executes a complete search and analysis of data each day. The number of API transactions. web sources, and available users are the determining factors for each Seahawk package.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divideContain">
+                <img src="images/divider.png" class="img-responsive" style="margin-top:8%;">
+            </div>
+
+            <div class="blackBarContain" style="margin-top:1%;">
+
+                <div class="blackBar">
+                    <h1 class="blackBarText">PACKAGES</h1>
+                </div>
+            </div>
+
+            <div id="gradientBGContain">
+                <img src="images/gradient.jpg" class="img-responsive">
+            </div>
+
+            <div id="detailsContain">
+                <div class="row">
+                    <div class="seahawkPackages" id="seahawkOne">
+                        <div class="col-xs-2 col-sm-4">
+                            <div class="detailName">
+                                <h1 class="nameText">
+                                    SEAHAWK ONE
+                                </h1>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-6 col-sm-3 col-xs-offset-4 col-sm-offset-0">
+                            <div class="detailSpecs">
+                                <p class="spec">
+                                    1 - 5 USERS
+                                </p>
+                                <p class="spec">
+                                    100,000 API TRANSACTIONS
+                                </p>
+
+                                <p class="spec">
+                                    1-5 INDUSTRY SPECFIC SITES, ARTICLES, REPORTS AND REPORTS
+                                </p>
+
+                                <p class="spec">
+                                    $5,597 A MONTH
+                                </p>
+
+                                <p class="spec">
+                                    $67,164 A YEAR
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-5 col-xs-offset-6 col-sm-offset-0">
+                            <div class="detailDesc">
+                                <p class="detailText">
+                                    Seahawk One is our most basic package, designed with small business owners in mind. This package is ideal for a small business owner looking for a quick and efficient method to supply chain management.
+                                </p>
+
+                                <button class="startedButton">GET STARTED</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="seahawkPackages" id="seahawkPlus">
+                        <div class="col-xs-2 col-sm-4">
+                            <div class="detailName">
+                                <h1 class="nameText">
+                                    SEAHAWK PLUS
+                                </h1>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-6 col-sm-3 col-xs-offset-4 col-sm-offset-0">
+                            <div class="detailSpecs">
+                                <p class="spec">
+                                    1 - 10 USERS
+                                </p>
+                                <p class="spec">
+                                    1,000,000 API TRANSACTIONS
+                                </p>
+
+                                <p class="spec">
+                                    6-10 INDUSTRY SPECFIC SITES, ARTICLES, REPORTS AND REPORTS
+                                </p>
+
+                                <p class="spec">
+                                    $8,697 A MONTH
+                                </p>
+
+                                <p class="spec">
+                                    $104,364 A YEAR
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-5 col-xs-offset-6 col-sm-offset-0">
+                            <div class="detailDesc">
+                                <p class="detailText">
+                                    This package is crafted to bring the most information possible to small or medium businesses. Seahawk Plus is designed for smaller businesses with a more complex supply chain.
+                                </p>
+
+                                <button class="startedButton">GET STARTED</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="seahawkPackages" id="seahawkEnt">
+                        <div class="col-xs-2 col-sm-4">
+                            <div class="detailName">
+                                <h1 class="nameText">
+                                    SEAHAWK ENTERPRISE
+                                </h1>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-6 col-sm-3 col-xs-offset-4 col-sm-offset-0">
+                            <div class="detailSpecs">
+                                <p class="spec">
+                                    1 - 50 USERS
+                                </p>
+                                <p class="spec">
+                                    5,000,000 API TRANSACTIONS
+                                </p>
+
+                                <p class="spec">
+                                    10-25 INDUSTRY SPECFIC SITES, ARTICLES, REPORTS AND REPORTS
+                                </p>
+
+                                <p class="spec">
+                                    $11,297 A MONTH
+                                </p>
+
+                                <p class="spec">
+                                    $135,564 A YEAR
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-5 col-xs-offset-6 col-sm-offset-0">
+                            <div class="detailDesc">
+                                <p class="detailText">
+                                    This package is made for businesses that cover more ground with a more complex supply chain. Seahawk Enterprise allows more levels of management to become involved with supply chain risk.
+                                </p>
+
+                                <button class="startedButton">GET STARTED</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seahawkPackages" id="seahawkPlat">
+                        <div class="col-xs-2 col-sm-4">
+                            <div class="detailName">
+                                <h1 class="nameText">
+                                    SEAHAWK PLATINUM
+                                </h1>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-6 col-sm-3 col-xs-offset-4 col-sm-offset-0">
+                            <div class="detailSpecs">
+                                <p class="spec">
+                                    50+ USERS
+                                </p>
+                                <p class="spec">
+                                    UNLIMITED API TRANSACTIONS
+                                </p>
+
+                                <p class="spec">
+                                    UNLIMITED INDUSTRY SPECFIC SITES, ARTICLES, REPORTS AND REPORTS
+                                </p>
+
+                                <p class="spec">
+                                    $14,897 A MONTH
+                                </p>
+
+                                <p class="spec">
+                                    $178,764 A YEAR
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-5 col-xs-offset-6 col-sm-offset-0">
+                            <div class="detailDesc">
+                                <p class="detailText">
+                                    This package is crafted to bring the most information possible to small or medium businesses. Seahawk Plus is designed for smaller businesses with a more complex supply chain.
+                                </p>
+
+                                <button class="startedButton">GET STARTED</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="divideContain">
+                <img src="images/divider.png" class="img-responsive" style="margin-top:3%;">
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm" id="dropDownMenu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-bar"></span>
+                    <img src="images/menubar.png" width="50px" height="50px">
+                </a>
+                    <ul class="sub-menu">
+                        <img class="line" id="topLine" src="images/line.png">
+                        <a href="index.html" style="color:black; text-decoration:none;">
+                            <div class="dropBox">
+                                <li id="home">HOME</li>
+                            </div>
+                        </a>
+                        <img class="line" src="images/line.png">
+                        <a href="about.html" style="color:black; text-decoration:none;">
+
+                            <div class="dropBox">
+                                <li>ABOUT</li>
+                            </div>
+
+                        </a>
+                        <img class="line" src="images/line.png">
+                        <a href="pricing.html" style="color:black; text-decoration:none;">
+
+                            <div class="dropBox">
+                                <li>PRICING</li>
+                            </div>
+                        </a>
+                        <img class="line hidden-lg" src="images/line.png">
+                        <a href="pricing.html" style="color:black; text-decoration:none;">
+
+                            <div class="dropBox hidden-lg">
+                                <li>LOG IN</li>
+                            </div>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="overlay">
+
+    </div>
+
+    <div id="loginScreen">
+        <div id="topBox">
+
+            <div class="boxItem" id="user"><label>user ID: </label> <input type="text" id="userInput"></div>
+            <div class="boxItem" id="password"><label>password: </label> <input type="password" id="passwordInput"></div>
+        </div>
+        <button id="loginButton" onclick="validate()">LOGIN</button>
+        <button id="findButton">FIND OUT MORE</button>
+
+    </div>
+
+
+
+    </div>
+    <div class="device-xs visible-xs"></div>
+    <div class="device-sm visible-sm"></div>
+    <div class="device-md visible-md"></div>
+    <div class="device-lg visible-lg"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+</html>

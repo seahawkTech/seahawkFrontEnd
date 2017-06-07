@@ -1,0 +1,213 @@
+/*FONTS*/
+@font-face {
+  font-family: 'CourierNewBold';
+  src: url('/fonts/CourierNewBold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'CourierNew';
+  src: url('/fonts/CourierNew.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'FuturaMedium';
+  src: url('/fonts/FuturaMedium.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/avenir.otf')  format('truetype');
+}
+
+@font-face{
+    font-family:'FontAwesome';
+    src: url(/fonts/fontawesome-webfont.ttf) format('truetype');
+}
+
+
+/*Home Page for Medium Screens*/
+@media (min-width: 992px) and (max-width: 1199px) 
+{
+    #topLeftContain
+    {
+    margin-top: -9%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) 
+{
+    
+        #navbar-collapse
+    {
+        margin-top: -3%;
+        
+    }
+     .blackBarContain .blackBar
+{ 
+    text-align: center;
+}
+
+#pricingText
+{
+    font-size: 150%;
+}
+
+#priceBar
+    {
+       margin-top: -2.4%;
+    }
+    
+    
+    .nameText
+    {
+        font-size: 250%;
+        
+    }
+    
+    .spec
+    {
+        
+        font-size: 90%;
+    }
+    
+    
+    #seahawkPlus, #seahawkEnt, #seahawkPlat
+{
+    margin-top: -8%;
+}
+}
+
+/*Pricing Page for xSmall devices in potrait mode*/  
+@media (max-width: 767px)  and (orientation:portrait) 
+{
+     .navbar-default
+    {
+    background-color: white;
+}
+
+
+    
+    .blackBarText
+{
+    
+    padding-top: 4%;
+    
+}
+    .blackBarContain .blackBar
+{ 
+
+    text-align: center;
+}
+
+#pricingText
+{
+    font-size: 130%;
+}
+
+
+    #priceBar
+    {
+       margin-top: -6%;
+    }
+    
+
+    
+    .nameText
+    {
+        padding-top: 90%;
+        font-size: 200%;
+        
+    }
+    
+    .detailSpecs
+{
+    padding-top: 0%;
+}
+    
+    .spec
+    {
+        
+        font-size: 85%;
+    }
+    
+    .detailDesc
+    {
+         padding-left: 30%;
+    border-left:2px black double;
+    margin-top: -9%;
+    }
+
+
+    .detailText
+    {
+        font-size: 90%;
+    }
+    
+    
+}
+
+
+
+@media (max-width: 767px)  and (orientation:landscape) 
+{
+     .navbar-default
+    {
+    background-color: white;
+}
+
+
+    
+    .blackBarText
+{
+    
+    padding-top: 4%;
+    
+}
+    .blackBarContain .blackBar
+{ 
+
+    text-align: center;
+}
+
+
+    #priceBar
+    {
+       margin-top: -6%;
+    }
+    
+
+    
+    .nameText
+    {
+        padding-top: 90%;
+        font-size: 300%;
+        
+    }
+    
+.detailSpecs
+{
+    padding-top: 0%;
+}
+    
+    .spec
+    {
+        
+        font-size: 85%;
+    }
+    
+    .detailDesc
+    {
+         padding-left: 30%;
+    border-left:2px black double;
+    margin-top: -9%;
+    }
+
+
+    .detailText
+    {
+        padding-top: 10%;
+        font-size: 90%;
+    }
+    
+
+}

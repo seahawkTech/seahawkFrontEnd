@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+    <link rel="stylesheet" href="css/theme.css" type="text/css">
+    <link rel="stylesheet" href="css/select2-bootstrap.css" type="text/css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/62d02a9a3d.js"></script>
+
+
+
+</head>
+
+<body style="  background-color: rgb(180,199,213);">
+
+    <!--navigation-->
+    <div class="row" id="mainContentRow">
+
+        <div class="col-lg-1 hidden-sm hidden-xs hidden-md">
+            <div class="navbar navbar-inverse navbar-fixed-left" id="secondaryNav" onclick="">
+                <a class="navbar-brand" href="#" id="logout">logout</a>
+            </div>
+        </div>
+
+        <div class="col-sm-11" id="mainContainer">
+
+            <div id="topContain">
+                <div class="row">
+                    <div class="col-sm-4" id="newLogo">
+                        <a href="index.html">
+                              <img src="images/newLogo.png" class="img-responsive">
+                              </a>
+                    </div>
+                    <div class="col-sm-2" id="companyProfile">
+                        <h1>COMPANY PROFILE</h1>
+                    </div>
+                    <div class="col-sm-2" id="savedArticles">
+                        <h1>SAVED ARTICLES</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="saveContain">
+                <div class="row">
+                    <div class="col-sm-5" id="savedPresets">
+                        <h1>SAVED SEARCH PRESETS</h1>
+                    </div>
+                    <div class="col-sm-5" id="saveSearch">
+                        <h1>SAVE THIS SEARCH</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="searchContain">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="searchBox">
+                            <div class="input-group col-md-12">
+                                <input type="text" class="form-control input-lg" placeholder="Search" id="WORK" />
+                                <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg btn-primary" id="searchButton" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="filterContain">
+                <form>
+                    <div class="form-group row">
+                        <div class="col-lg-3 col-md-2">
+                            <label>Date:</label><select class="filterSelect" id="dateFilter">
+                            <option value = "">
+                                  Do Not Filter
+                               </option>
+                               <option value = "1">
+                                   Past 24 Hours
+                               </option>
+                                <option value = "7">
+                                   Past Week
+                               </option>
+                                <option value = "30">
+                                   Past 30 Days
+                               </option>
+                                <option value = "90">
+                                   Past Quarter
+                               </option>
+                               <option value = "365">
+                                  Past Year
+                               </option>
+                               
+                       </select>
+
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-2">
+                            <label>Location: </label><select class="filterSelect" id="locationFilter">
+                            <option value = "">
+                                  Do Not Filter
+                               </option>
+                           <option value = "United States of America">
+                               United States of America
+                           </option>
+                           <option value = "RSA">
+                               RSA
+                           </option>
+                           <option value = "France">
+                               France
+                           </option>
+                           <option value = "Mexico">
+                               Mexico
+                           </option>
+                           <option value = "China">
+                               China
+                           </option>
+                           <option value = "Japan">
+                               Japan
+                           </option>
+                           <option value = "Canada">
+                               Canada
+                           </option>
+                       </select>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-2">
+                            <label>Risk Type</label><select class="filterSelect" id="topicFilter">
+                            <option value = "">
+                                  Do Not Filter
+                               </option>
+                           <optgroup label = "Enviromental" id="enviormental">
+                               <option value="naturaldisaster">
+                                   Natural Disaster
+                               </option>
+                                <option value="weatherdelay">
+                                   Weather Delay
+                               </option>
+                               <option value="hurricane">
+                                   Hurricane
+                               </option>
+                               <option value = "tornado">
+                                   Tornado
+                               </option>
+                               <option value = "tsunami">
+                                    Tsunami
+                               </option>
+                               <option value = "earthquake">
+                                    Earthquake
+                               </option>
+                                 <option value = "tropicalstorm">
+                                    Tropical Storm
+                               </option>
+                                <option value = "cyclone">
+                                    Cyclone
+                               </option>
+                                <option value = "drought">
+                                    Drought
+                               </option>
+                                <option value = "blizzard">
+                                   Blizzard 
+                               </option>
+                                <option value = "snowstorm">
+                                    Snow Storm
+                               </option>
+                                <option value = "flooding">
+                                    Flooding
+                               </option>
+                                <option value = "pandemic">
+                                    Pandemic
+                               </option>
+                                <option value = "outbreak">
+                                    Outbreak
+                               </option>
+                                <option value = "healthcrisis">
+                                    Health Crisis
+                               </option>
+                                <option value = "globalwarming">
+                                    Global Warming
+                               </option>
+             
+                           </optgroup>
+                       </select>
+
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-2">
+                            <label>Company:</label><select class="filterSelect" id="companyFilter">
+                                        <option value = "">
+                                  Do Not Filter
+                               </option>
+                           <option value = "Sony">
+                               Sony
+                           </option>
+                           <option value = "Google">
+                               Google
+                           </option>
+                           <option value = "Amazon">
+                               Amazon
+                           </option>
+                           <option value = "PepsiCo">
+                               Nike
+                           </option>
+                           <option value = "Apple">
+                               Apple
+                           </option>
+                           <option value = "Samsung Electornics">
+                               Samsung Electronics
+                           </option>
+                           <option value = "Yahoo">
+                               Yahoo
+                           </option>
+                       </select>
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="semanticFilter">
+                        <div class="col-1">
+                            <i class="fa fa-plus fa-2x black" aria-hidden="true" id="plusButton"></i>
+                        </div>
+                        <div class="col-1">
+                            <i class="fa fa-minus fa-2x black" aria-hidden="true" id="minusButton"></i>
+                        </div>
+                        <div class="col-1">
+                            <i class="fa fa-square-o fa-2x black" aria-hidden="true" id="neutralButton"></i>
+                        </div>
+                        <div class="col-1">
+                            <i class="fa fa-square fa-2x black" aria-hidden="true" id="allButton"></i>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <button id="filterButton">APPLY FILTERS</button>
+            <h1 id="noResults">No Results Found</h1>
+            <div id="resultsContain">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <div class="device-xs visible-xs"></div>
+    <div class="device-sm visible-sm"></div>
+    <div class="device-md visible-md"></div>
+    <div class="device-lg visible-lg"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+</html>

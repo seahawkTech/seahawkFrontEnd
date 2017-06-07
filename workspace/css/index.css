@@ -1,0 +1,217 @@
+/*FONTS*/
+@font-face {
+  font-family: 'CourierNewBold';
+  src: url('/fonts/CourierNewBold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'CourierNew';
+  src: url('/fonts/CourierNew.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'FuturaMedium';
+  src: url('/fonts/FuturaMedium.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/avenir.otf')  format('truetype');
+}
+
+@font-face{
+    font-family:'FontAwesome';
+    src: url(/fonts/fontawesome-webfont.ttf) format('truetype');
+}
+
+/*Home Page for Medium Screens*/
+@media (min-width: 992px) and (max-width: 1199px) 
+{
+    
+    .descriptions
+    {
+        font-size: 80%;
+    height:250px;
+}
+    .desHeader
+    {
+        font-size: 160%;
+    }
+    #proactive .descriptions
+    {
+    padding-right: 20px;
+}
+    }
+
+
+/*Home Page for small screens*/
+@media (min-width: 768px) and (max-width: 991px) 
+{
+    
+     #topBGContain
+    {
+         margin-top: -4%;
+    }
+
+    #navbar-collapse
+    {
+        margin-top: -2%;
+        
+    }
+    
+    .descContain
+{
+    margin-left: 15%;
+}
+
+.descriptions
+{
+    
+    height: 200px;
+    
+}
+
+    .desHeader
+{
+    font-family: 'Avenir';
+   font-size: 150%;
+  
+    
+}
+
+#proactive .descriptions
+{
+    padding-right:20px;
+}
+
+#smart .descriptions
+{
+    padding-left: 0px;
+  padding-right: 30px;
+}
+
+
+.bullet
+{
+    font-family: 'Avenir';
+    font-size: 90%;
+  
+}
+
+#innoContain
+{
+    width: 80%;
+   margin-left: 11%;
+}
+#innoText
+{
+    font-size: 110%;
+
+}
+
+.blackBarContain .blackBar
+{ 
+
+    text-align: center;
+}
+    }
+    
+
+/*Home Page for xSmall devices(landscape mode and up) */  
+@media (max-width: 767px) 
+{
+    .navbar-default
+    {
+    background-color: white;
+}
+
+    #topBGContain
+    {
+     margin-top: -6%;   
+    }
+    
+    .blackBarText
+{
+    
+    padding-top: 4%;
+    
+}
+    .blackBarContain .blackBar
+{ 
+
+    text-align: center;
+}
+
+#innoText
+{
+    font-size: 100%;
+
+}
+
+
+.desHeader
+{
+    
+    font-size: 110%;
+    
+}
+
+#desc1 .desHeader
+{
+    font-weight: bold;
+    padding: 2%;
+    border: 1px solid black;
+}
+
+.descriptions
+{
+    width: 100%;
+    
+}
+
+#desc1 .descriptions
+{
+    font-size: 90%;
+    padding: 5%;
+    margin-top: -4%;
+    border: 1px solid black; 
+}
+
+#desc1 .descriptions
+{
+
+    border-top: 0px solid black; 
+}
+
+
+#desc1 #proactive .descriptions, #desc1 #smart .descriptions
+{
+    
+    border-right: 1px solid black;
+ 
+}
+
+#desc2 #smart, #desc2 #custo
+{
+    margin-top: -9%;
+}
+#desc2 .desHeader
+{
+    border-bottom: 2px solid black;
+}
+
+#desc2 .descriptions
+{
+    margin-top: -3%;
+    font-size: 90%;
+}
+#desc2 #proactive .descriptions, #desc2 #smart .descriptions
+{
+    
+    border-right: 0px solid black;
+}
+}
+
+.slick-prev:before, .slick-next:before { 
+    color:black !important;
+}
